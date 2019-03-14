@@ -10,6 +10,12 @@ public class Ball : MonoBehaviour {
     private bool m_Dragging = false;
     private bool m_Released = false;
 
+    public void Restart()
+    {
+        m_Dragging = false;
+        m_Released = false;
+    }
+
     void OnMouseDown()
     {
         m_Dragging = true;
